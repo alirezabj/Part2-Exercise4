@@ -191,25 +191,15 @@ public void loadMoney(Card card, double amount);
 ```
 
 ## Justifications
-Encapsulation:
+Encapsulation: Each class handles its own data and logic. For example, Card encapsulates balance and ticket validity, while Ticket encapsulates type, price, and validity duration
 
-1. Each class handles its own data and logic. For example, Card encapsulates balance and ticket validity, while Ticket encapsulates type, price, and validity duration
+Separation of Concerns: Card focuses on managing user data, while ReaderDevice handles interactions with the card. ServicePoint focuses on loading money
 
-Separation of Concerns:
+Reusability: The modular design allows Card and Ticket to be reused in other contexts or extended for additional features
 
-1. Card focuses on managing user data, while ReaderDevice handles interactions with the card. ServicePoint focuses on loading money
+Robustness: Class invariants and preconditions ensure that invalid states cannot occur
 
-Reusability:
-
-1. The modular design allows Card and Ticket to be reused in other contexts or extended for additional features
-
-Robustness:
-
-1. Class invariants and preconditions ensure that invalid states cannot occur
-
-Efficiency:
-
-1. Using `System.currentTimeMillis()` ensures quick time calculations without requiring additional libraries
+Efficiency: Using `System.currentTimeMillis()` ensures quick time calculations without requiring additional libraries
 
 ## System Flow
 Customer Loads Money: At a service point, the user loads money onto their Card
