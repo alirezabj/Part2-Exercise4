@@ -196,7 +196,8 @@ Encapsulation:
 1. Each class handles its own data and logic. For example, Card encapsulates balance and ticket validity, while Ticket encapsulates type, price, and validity duration
 
 Separation of Concerns:
-2.Card focuses on managing user data, while ReaderDevice handles interactions with the card. ServicePoint focuses on loading money
+
+1. Card focuses on managing user data, while ReaderDevice handles interactions with the card. ServicePoint focuses on loading money
 
 Reusability:
 
