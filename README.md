@@ -69,9 +69,9 @@ public void purchaseTicket(Ticket ticket);
 
 #### Class Invariants:
 
-balance >= 0: Balance must never be negative.
+`balance >= 0:` Balance must never be negative.
 
-currentTicket == null || currentTicket.isValid(): If a ticket exists, it must be valid.
+`currentTicket == null || currentTicket.isValid():` If a ticket exists, it must be valid.
 
 
 
