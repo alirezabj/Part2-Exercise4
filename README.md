@@ -18,9 +18,9 @@
 3. Check if a valid ticket exists and manage its expiration.
 
 #### Attributes: 
-`private double balance;       // Current balance on the card in euros and cents`
+`private double balance` - Current balance on the card in euros and cents
 
-`private Ticket currentTicket; // The active ticket on the card, if any`
+`private Ticket currentTicket` - The active ticket on the card, if any`
 
 #### Methods: 
 ```java
