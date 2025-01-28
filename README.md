@@ -50,7 +50,7 @@ public Ticket getCurrentTicket();
 
 /**
  * Checks if the card has an active ticket
- * @return True if the current ticket is valid; false otherwise
+ * @return True if the current ticket is valid, otherwise return false 
  * @.pre true
  * @.post RESULT == (currentTicket != null && currentTicket.isValid())
  */
