@@ -1,13 +1,13 @@
 # Part2-Exercise4
 
 ## Classes
-`Card`: Represents the user's payment card and handles balance management and ticket validity.
+`Card`: Represents the user's payment card and handles balance management and ticket validity
 
-`Ticket`: Encapsulates ticket details, including type, price, and expiration time.
+`Ticket`: Encapsulates ticket details, including type, price, and expiration time
 
 `ReaderDevice`: Represents the device that handles ticket purchases
 
-`ServicePoint`: Represents locations where customers can load money onto their cards.
+`ServicePoint`: Represents locations where customers can load money onto their cards
 
 
 ## Class: `Card`
