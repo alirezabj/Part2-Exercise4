@@ -204,8 +204,7 @@ Customer Loads Money: At a service point, the user loads money onto their Card
 Customer Boards a Bus: 
 The ReaderDevice checks if the card has a valid ticket:
 
-If valid, no action is taken
-If invalid, the user selects a ticket type, and the system deducts the price if the balance is sufficient
+If valid, no action is taken. However, if invalid, the user selects a ticket type and the system deducts the price if the balance is sufficient
 
 Validity Check:
 The Ticket class makes sure tickets expire at the right time, keeping them valid only for the set duration
