@@ -111,7 +111,6 @@ public boolean isValid();
 
 /**
  * Returns the price of the ticket
- * @return The ticket price
  * @.pre true
  * @.post RESULT == price
  */
