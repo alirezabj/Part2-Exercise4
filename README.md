@@ -81,8 +81,11 @@ public void purchaseTicket(Ticket ticket);
 
 #### Attributes: 
 `private String type` - Ticket type: single, day, or monthly
+
 `private double price`  - Price of the ticket
+
 `private long expiration` - Expiration time in milliseconds since epoch
+
 
 
 
