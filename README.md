@@ -25,35 +25,35 @@
 #### Methods: 
 ```java
 /**
- * Loads a specified amount of money onto the card
+ * Load a specified amount of money onto the card
  * @.pre amount > 0
  * @.post balance == OLD(balance) + amount
  */
 public void loadMoney(double amount);
 
 /**
- * Returns the current balance of the card
+ * Return the current balance of the card
  * @.pre true
  * @.post RESULT == balance
  */
 public double getBalance();
 
 /**
- * Returns the current ticket on the card, if any
+ * Return the current ticket on the card, if any
  * @.pre true
  * @.post RESULT == currentTicket
  */
 public Ticket getCurrentTicket();
 
 /**
- * Checks if the card has an active ticket and returns True if the current ticket is valid otherwise return false 
+ * Check if the card has an active ticket and return True if the current ticket is valid otherwise return false 
  * @.pre true
  * @.post RESULT == (currentTicket != null && currentTicket.isValid())
  */
 public boolean hasValidTicket();
 
 /**
- * Deducts the ticket price and sets a new ticket as the current ticket
+ * Deduct the ticket price and set a new ticket as the current ticket
  * @param ticket The ticket to purchase
  * @.pre ticket != null && ticket.getPrice() <= balance
  * @.post balance == OLD(balance) - ticket.getPrice()
@@ -92,7 +92,7 @@ public void purchaseTicket(Ticket ticket);
 #### Methods:
 ```java
 /**
- * Constructs a new ticket
+ * Construct a new ticket
  * @param type The type of the ticket (single, day, monthly)
  * @param price The price of the ticket
  * @param validityDuration The validity duration of the ticket in milliseconds
@@ -103,14 +103,14 @@ public void purchaseTicket(Ticket ticket);
 public Ticket(String type, double price, long validityDuration);
 
 /**
- * Checks if the ticket is still valid and return True if the ticket is valid otherwise return false 
+ * Check if the ticket is still valid and return True if the ticket is valid otherwise return false 
  * @.pre true
  * @.post RESULT == (System.currentTimeMillis() <= expiration)
  */
 public boolean isValid();
 
 /**
- * Returns the price of the ticket
+ * Return the price of the ticket
  * @.pre true
  * @.post RESULT == price
  */
@@ -149,7 +149,7 @@ private long monthlyTicketValidity = 30 * 24 * 60 * 60 * 1000 // 30 days
 #### Methods: 
 ```java
 /**
- * Displays the current balance of the card
+ * Display the current balance of the card
  * @param card The card to check
  * @.pre card != null
  * @.post RESULT == card.getBalance()
@@ -157,7 +157,7 @@ private long monthlyTicketValidity = 30 * 24 * 60 * 60 * 1000 // 30 days
 public double checkBalance(Card card);
 
 /**
- * Facilitates ticket purchase
+ * Facilitate ticket purchase
  * @param card The card used for the purchase
  * @param ticketType The type of ticket to purchase (single, day, monthly)
  * @.pre card != null && ticketType in {"single", "day", "monthly"}
@@ -177,7 +177,7 @@ public void purchaseTicket(Card card, String ticketType);
 #### Methods:
 ```java
 /**
- * Loads a specified amount of money onto the card
+ * Load a specified amount of money onto the card
  * @param card The card to load money onto
  * @param amount The amount to load
  * @.pre card != null && amount > 0
@@ -202,9 +202,7 @@ Efficiency: Using `System.currentTimeMillis()` ensures quick time calculations w
 Customer Loads Money: At a service point, the user loads money onto their Card
 
 Customer Boards a Bus: 
-The ReaderDevice checks if the card has a valid ticket:
-
-If valid, no action is taken. However, if invalid, the user selects a ticket type and the system deducts the price if the balance is sufficient
+The ReaderDevice checks if the card has a valid ticket: If valid, no action is taken. However, if invalid, the user selects a ticket type and the system deducts the price if the balance is sufficient
 
 Validity Check:
 The Ticket class makes sure tickets expire at the right time, keeping them valid only for the set duration
