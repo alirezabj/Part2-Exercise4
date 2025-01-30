@@ -5,7 +5,7 @@
 
 `Ticket`: Encapsulates ticket details, including type, price, and expiration time.
 
-`ReaderDevice`: Represents the device that handles ticket purchases, balance inquiries, and card loading.
+`ReaderDevice`: Represents the device that handles ticket purchases
 
 `ServicePoint`: Represents locations where customers can load money onto their cards.
 
