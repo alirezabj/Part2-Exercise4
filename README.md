@@ -121,7 +121,7 @@ public double getPrice();
 #### Class Invariants:
 
 1. `price > 0`: A ticket must always have a positive price
-2.   expiration > System.currentTimeMillis()` when created: The expiration time must be in the future
+2. `expiration > System.currentTimeMillis()` when created, the expiration time must be in the future
 
 
 
