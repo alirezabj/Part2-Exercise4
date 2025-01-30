@@ -84,7 +84,7 @@ public void purchaseTicket(Ticket ticket);
 
 `private double price`  - Price of the ticket
 
-`private long expiration` - Expiration time in milliseconds since epoch
+`private long expiration` - Expiration time in milliseconds 
 
 
 
