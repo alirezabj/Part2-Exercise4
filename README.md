@@ -103,8 +103,7 @@ public void purchaseTicket(Ticket ticket);
 public Ticket(String type, double price, long validityDuration);
 
 /**
- * Checks if the ticket is still valid
- * @return True if the ticket is valid, otherwise return false 
+ * Checks if the ticket is still valid and return True if the ticket is valid otherwise return false 
  * @.pre true
  * @.post RESULT == (System.currentTimeMillis() <= expiration)
  */
