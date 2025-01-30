@@ -190,7 +190,7 @@ public void loadMoney(Card card, double amount);
 ## Justifications
 Encapsulation: Each class handles its own data and logic. For example, Card encapsulates balance and ticket validity, while Ticket encapsulates type, price, and validity duration
 
-Separation of Concerns: Card focuses on managing user data, while ReaderDevice handles interactions with the card. ServicePoint focuses on loading money
+Tasks seperations: Card focuses on managing user data, while ReaderDevice handles interactions with the card. ServicePoint focuses on loading money
 
 Reusability: The modular design allows Card and Ticket to be reused in other contexts or extended for additional features
 
