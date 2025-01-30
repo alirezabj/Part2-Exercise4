@@ -26,7 +26,6 @@
 ```java
 /**
  * Loads a specified amount of money onto the card
- * @param amount The amount to be loaded (must be > 0)
  * @.pre amount > 0
  * @.post balance == OLD(balance) + amount
  */
@@ -34,7 +33,6 @@ public void loadMoney(double amount);
 
 /**
  * Returns the current balance of the card
- * @return The card's balance
  * @.pre true
  * @.post RESULT == balance
  */
@@ -42,15 +40,13 @@ public double getBalance();
 
 /**
  * Returns the current ticket on the card, if any
- * @return The current ticket or null if no ticket is valid
  * @.pre true
  * @.post RESULT == currentTicket
  */
 public Ticket getCurrentTicket();
 
 /**
- * Checks if the card has an active ticket
- * @return True if the current ticket is valid, otherwise return false 
+ * Checks if the card has an active ticket and returns True if the current ticket is valid otherwise return false 
  * @.pre true
  * @.post RESULT == (currentTicket != null && currentTicket.isValid())
  */
